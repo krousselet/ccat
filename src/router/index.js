@@ -16,6 +16,24 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  {
+    path: "/convert",
+    name: "convert",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "convert" */ "../views/ConvertView.vue"),
+  },
+  {
+    path: "/technicalterms",
+    name: "technicalterms",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "convert" */ "../views/TechnicalTermsView.vue"),
+  },
 ];
 
 const router = createRouter({

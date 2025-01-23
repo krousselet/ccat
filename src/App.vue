@@ -1,10 +1,17 @@
+<script setup>
+import HeaderDisplay from './components/HeaderDisplay.vue';
+
+</script>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">Details</router-link>
-    <router-link to="/convert">Convertir</router-link>
-    <router-link to="/technicalterms">Glossaire</router-link>
-  </nav>
+  <HeaderDisplay>
+  </HeaderDisplay>
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">Details</router-link>
+      <router-link to="/convert">Convertir</router-link>
+      <router-link to="/technicalterms">Glossaire</router-link>
+    </nav>
   <router-view />
 </template>
 
@@ -15,8 +22,11 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
 
+}
+li {
+  list-style: none;
+}
 nav {
   padding: 30px;
   display: flex;
@@ -27,13 +37,14 @@ nav {
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: red;
     }
   }
 }

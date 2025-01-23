@@ -1,17 +1,16 @@
 <template>
-    <div>
+    <main>
         <section id="feet-in-meters">
             <div class="title-container container">
-                <h3>Conversion de PIEDS en METRES</h3>
+                <h3>PIEDS en METRES</h3>
             </div>
-            <br />
             <ul>
                 <li>
                     <math>
-                        <mi>Altitude en mètres:</mi>
+                        <mi>mètres:</mi>
                         <mo>=</mo>
                         <mfrac>
-                            <mi>altitude en pieds</mi>
+                            <mi>pieds</mi>
                             <mn>10</mn>
                         </mfrac>
                         <mo>*</mo>
@@ -25,23 +24,25 @@
                     <input type="number" v-model="feet" id="feet" />
                 </div>
                 <button type="submit">CONVERTIR</button>
-                <transition name="fade">
-                    <p v-if="metersAnswer" class="meters-answer answer">{{ metersAnswer }}</p>
-                </transition>
+                <div class="answer-container">
+                    <transition name="fade">
+                        <p v-if="metersAnswer" class="meters-answer answer">{{ metersAnswer }}</p>
+                    </transition>
+                </div>
             </form>
         </section>
 
         <section id="meters-in-feet">
             <div class="title-container">
-                <h3>Conversion de METRES en PIEDS</h3>
+                <h3>METRES en PIEDS</h3>
             </div>
             <ul>
                 <li>
                     <math>
-                        <mi>altitude in feet</mi>
+                        <mi>pieds</mi>
                         <mo>=</mo>
                         <mfrac>
-                            <mi>altitude in meters</mi>
+                            <mi>mètres</mi>
                             <mn>3</mn>
                         </mfrac>
                         <mo>*</mo>
@@ -51,28 +52,30 @@
             </ul>
             <form @submit.prevent="convertMetersToFeet">
                 <div class="form-container">
-                    <label for="meters">Mètres:</label>
+                    <label for="meters">mètres:</label>
                     <input type="number" v-model="meters" id="meters" />
                 </div>
                 <button type="submit">CONVERTIR</button>
-                <transition name="fade">
-                    <p v-if="feetAnswer" class="feet-answer answer">{{ feetAnswer }}</p>
-                </transition>
+                <div class="answer-container">
+                    <transition name="fade">
+                        <p v-if="feetAnswer" class="feet-answer answer">{{ feetAnswer }}</p>
+                    </transition>
+                </div>
             </form>
         </section>
 
         <section id="kms-in-Nm">
             <div class="title-container">
-                <h3>Conversion de kms en Nautic Miles</h3>
+                <h3>Kms en Miles Nautiques</h3>
             </div>
-            <br />
+            
             <ul>
                 <li>
                     <math>
-                        <mi>distance in Nm</mi>
+                        <mi>Nm</mi>
                         <mo>=</mo>
                         <mfrac>
-                            <mi>distance in kms</mi>
+                            <mi>kms</mi>
                             <mn>1.852</mn>
                         </mfrac>
                     </math>
@@ -84,23 +87,25 @@
                     <input type="number" v-model="kms" id="kms" />
                 </div>
                 <button type="submit">CONVERTIR</button>
-                <transition name="fade">
-                    <p v-if="mnAnswer" class="mn-answer answer">{{ mnAnswer }}</p>
-                </transition>
+                    <div class="answer-container">
+                    <transition name="fade">
+                        <p v-if="mnAnswer" class="mn-answer answer">{{ mnAnswer }}</p>
+                    </transition>
+                </div>
             </form>
         </section>
 
         <section id="Nm-in-kms">
             <div class="title-container">
-                <h3>Conversion de Nautical Miles en Kilomètres</h3>
+                <h3>Miles Nautiques en Kilomètres</h3>
             </div>
-            <br />
+            
             <ul>
                 <li>
                     <math>
-                        <mi>distance in kms</mi>
+                        <mi>kms</mi>
                         <mo>=</mo>
-                        <mi>distance in Nm</mi>
+                        <mi>Nm</mi>
                         <mo>*</mo>
                         <mn>1.852</mn>
                     </math>
@@ -112,12 +117,77 @@
                     <input type="number" v-model="mn" id="mn" />
                 </div>
                 <button type="submit">CONVERTIR</button>
+                <div class="answer-container">
                 <transition name="fade">
-                    <p v-if="kmsAnswer" class="kms-answer answer">{{ kmsAnswer }}</p>
-                </transition>
+                        <p v-if="kmsAnswer" class="kms-answer answer">{{ kmsAnswer }}</p>
+                    </transition>
+                </div>
             </form>
         </section>
-    </div>
+
+        <section id="kmsh-in-kt">
+            <div class="title-container">
+                <h3>Kms / h en Noeuds</h3>
+            </div>
+            
+            <ul>
+                <li>
+                    <math>
+                        <mi>Kt</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mi>km/h</mi>
+                            <mn>2</mn>
+                        </mfrac>
+                        <mo>+</mo>
+                        <mo>10%</mo>
+                    </math>
+                </li>
+            </ul>
+            <form @submit.prevent="convertKmshToKt">
+                <div class="form-container">
+                    <label for="kmsh">Kms/h:</label>
+                    <input type="number" v-model="kmsh" id="kmsh" />
+                </div>
+                <button type="submit">CONVERTIR</button>
+                    <div class="answer-container">
+                    <transition name="fade">
+                        <p v-if="ktAnswer" class="kt-answer answer">{{ ktAnswer }}</p>
+                    </transition>
+                </div>
+            </form>
+        </section>
+
+        <section id="kt-in-kmsh">
+            <div class="title-container">
+                <h3>Noeuds en Kilomètres / h</h3>
+            </div>
+            
+            <ul>
+                <li>
+                    <math>
+                        <mi>kms / h</mi>
+                        <mo>=</mo>
+                        <mo>(kt * 2)</mo>
+                        <mo>-</mo>
+                        <mn>10%</mn>
+                    </math>
+                </li>
+            </ul>
+            <form @submit.prevent="convertKtToKmsh">
+                <div class="form-container">
+                    <label for="kt">Kt:</label>
+                    <input type="number" v-model="kt" id="kt" />
+                </div>
+                <button type="submit">CONVERTIR</button>
+                <div class="answer-container">
+                <transition name="fade">
+                        <p v-if="kmshAnswer" class="kmsh-answer answer">{{ kmshAnswer }}</p>
+                    </transition>
+                </div>
+            </form>
+        </section>
+    </main>
 </template>
 
 <script>
@@ -129,26 +199,30 @@ export default {
             meters: null,
             mn: null,
             kms: null,
+            kt: null,
+            kmsh: null,
             feetAnswer: "",
+            kmsAnswer: "",
             metersAnswer: "",
             mnAnswer: "",
-            kmsAnswer: "",
+            kmshAnswer: "",
+            ktAnswer: "",
         };
     },
     methods: {
         convertFeetToMeters() {
             if (this.feet !== null) {
-                this.metersAnswer = `${(this.feet / 10) * 3} mètres`;
+                this.metersAnswer = `${(this.feet * 0.3048).toFixed(2)} mètres`;
             }
         },
         convertMetersToFeet() {
             if (this.meters !== null) {
-                this.feetAnswer = `${(this.meters / 3) * 10} pieds`;
+                this.feetAnswer = `${(this.meters / 0.3048).toFixed(2)} pieds`; 
             }
         },
         convertKmsToNm() {
             if (this.kms !== null) {
-                this.mnAnswer = `${(this.kms / 1.852).toFixed(2)} Miles Nautique`;
+                this.mnAnswer = `${(this.kms / 1.852).toFixed(2)} Miles Nautique`; 
             }
         },
         convertNmToKms() {
@@ -156,17 +230,42 @@ export default {
                 this.kmsAnswer = `${(this.mn * 1.852).toFixed(2)} Kilomètres`;
             }
         },
+        convertKtToKmsh() {
+            if (this.kt !== null) {
+                this.kmshAnswer = `${(this.kt * 1.852).toFixed(2)} kms par heure`;
+            }
+        },
+
+        convertKmshToKt() {
+            if (this.kmsh !== null) {
+                this.ktAnswer = `${(this.kmsh / 1.852).toFixed(2)} Noeuds`;
+            }
+        },
     },
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
-@media (min-width:320px) and (max-width:550px) {
+.answer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:320px) and (max-width:990px) {
     #conversions {
         display: flex;
         flex-direction: column;
         width: 310px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    button {
+        width: 50%;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
@@ -222,10 +321,59 @@ export default {
 
 }
 
-@media (min-width:551px) and (max-width:12000px) {
-    section {
+@media (min-width:991px) and (max-width:12000px) {
+
+    main {
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-column-gap: 1fr;
+            grid-row-gap: 1fr;
+            font-size: 1rem;
+
+            .title-container {
+                font-size: .9rem;
+            }
+
+            ul {
+                font-size: 1.2rem;
+            }
+
+            form {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                width: 100%;
+                column-gap: 20px;
+
+                label {
+                    width: 100%;
+                }
+
+                input {
+                    min-width: 100%;
+                    text-align: center;
+                    inset: none;
+                    outline: none;
+                    transition: .5s ease;
+                }
+
+                input:focus {
+                    transition: .3s ease;
+                    border-bottom:1px solid red;
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 </style>

@@ -1,25 +1,60 @@
 <template>
-  <TechnicalTerms title="Les mots et abbréviations à connaître">
-  </TechnicalTerms>
-  <SwiperComponent :slides="technicalSlides"></SwiperComponent>
+    <swiper-container
+    :slides-per-view="7"
+    :space-between="spaceBetween"
+    :pagination="{
+      hideOnClick: true
+    }"
+    :breakpoints="{
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      2048: {
+        slidesPerView: 5,
+      },
+      4080: {
+        slidesPerView: 7,
+      },
+    }"
+  >
+    <swiper-slide v-for="(item, index) in slides" :key="index">
+        <slot :slide="item">
+            <div class="title-container">
+                <h2>{{ item.title }}</h2>
+            </div>
+            <div class="title-container">
+                <h3>{{ item.description }}</h3>
+            </div>
+            <div class="text">
+                <p>{{ item.details }}</p>
+            </div>
+        </slot>
+    </swiper-slide>
+</swiper-container>
 </template>
-  
-  <script>
-  // @ is an alias to /src
-  import SwiperComponent from "@/components/SwiperComponent.vue";
-  import TechnicalTerms from "@/components/TechnicalTerms.vue";
-  
-  export default {
-    name: "TechnicalTermsView",
-    components: {
-        TechnicalTerms,
-        SwiperComponent,
-    },
-    data() {
-        return {
-            technicalSlides: [
-                { title: "A.T.C", description: "Contrôle du Traffic Aérien | Air Traffic Control", details: "Structure au sol permettant de gérer toute une partie du ciel, qui est lui-même découpé en quartiers. Celle-ci utilise des radars ainsi que des communications radios. Elle forme par l'intermédiaire des contrôleurs aériens, une source d'information précieuse aux pilotes concernant les conditions météorologiques et les approches d'atterrissage. Le cas échéant, elle peut préconiser des déroutes et guider les pilotes en cas d'incident en vol" },
-                { title: "A.P.U", description: "Unité d'Alimentation Auxiliaire | Auxiliary Power Unit", details: "Permet à un avion de produire sa propre énergie pour alimenter ses systèmes. D'ordinaire, le moteur à réaction est situé dans la queue de l'avion. Il peut servir au démarrage de l'avion ainsi qu'à sa pressurisation."  },
+
+<script>
+
+import { register } from 'swiper/element/bundle';
+import 'swiper/swiper-bundle.css';
+register();
+
+export default {
+  name: "SwiperComponent",
+  props: {
+  slides: {
+    type: Array,
+    required: true,
+    validator: (value) => value.every((slide) => 'title' in slide && 'description' in slide && 'details' in slide),
+    default: () =>[
+                { title: "A.T.C", description: "Air Traffic Control", details: "Il s'agit de la structure au sol permettant de gérer toute une partie du ciel, qui est lui-même découpé en quartiers" },
+                { title: "A.P.U", description: "Auxiliary Power Unit", details: ""  },
                 { title: "B.E.A", description: "Bureau d'Enquêtes et d'Analyses", details: ""  },
                 { title: "C.A.T", description: "Commercial Air Transport", details: ""  },
                 { title: "C.R.N.A.", description: "Centre en-Route de la Navigation Aérienne (Contrôle les aéronefs IFR)", details: ""  },
@@ -54,8 +89,70 @@
                 { title: "G.T.A.", description: "Gendarmerie des Transports Aériens", details: ""  },
                 { title: "T.U.C / U.T.C", description: "Temps Universel Coordonné | Universal Time Coordinated", details: ""  },
             ],
-        };
+        },
     },
 };
-  </script>
-  
+</script>
+
+<style scoped lang="scss">
+
+swiper-container::part(pagination) {
+}
+
+swiper-container::part(bullet-active) {
+    background-color: #931116;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-align: justify;
+    }
+}
+
+@media (min-width:320px) and (max-width: 991px) {
+    .title-container {
+    margin: 2vw 25px;
+    }
+
+    .text {
+    margin: 25vw 25px;
+        p {
+            line-height: 25px;
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width: 2048px) {
+    .title-container {
+    margin: 4vw 25px;
+    }
+    .text {
+    margin: 12vw 25px;
+        p {
+            line-height: 25px;
+        }
+    }
+}
+
+@media (min-width:2049px) {
+    .title-container {
+    margin: 4vw 25px;
+    }
+    .text {
+    margin: 5vw 25px;
+        p {
+            text-align: justify;
+        }
+    }
+}
+// .title-container {
+//     margin: 2vw 25px;
+// }
+
+
+
+</style>

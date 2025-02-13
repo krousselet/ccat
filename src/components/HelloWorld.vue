@@ -7,6 +7,9 @@
       <img :src="sunImage" alt="logo d'un soleil">
     </div>
   </div>
+  <div class="text-container">
+    <p>Viser l'excellence</p>
+  </div>
 </template>
 
 <script>
@@ -59,13 +62,37 @@ export default {
   align-items: center;
   overflow: hidden;
   height: 800px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  background: linear-gradient(rgb(12, 91, 225), white);
 }
 
 .plane, .sun {
   position: absolute;
   z-index: 10;
+}
+
+.text-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  height: 50px;
+  overflow: hidden;
+
+  p {
+    font-size: 3rem;
+    letter-spacing: 15px;
+    position: absolute;
+    bottom: -250px;
+    animation: moveUp 1.5s 3s ease-in-out forwards;
+  }
+}
+
+img {
+  opacity: 0;
+  animation: appear .5s .5s ease-in-out forwards
 }
 
 /* Plane Animation */
@@ -81,9 +108,11 @@ export default {
 @keyframes planeMove {
   from {
     left: -100%;
+    top: 50%;
   }
   to {
     left: 30%;
+    top: 50%;
   }
 }
 
@@ -94,7 +123,13 @@ export default {
   }
   to {
     left: 50%;
-    bottom: 70%;
+    bottom: 55%;
+  }
+}
+
+@keyframes moveUp {
+  to {
+    bottom: 0;
   }
 }
 
@@ -103,12 +138,32 @@ export default {
     max-width: 991px;
     max-height: 400px;
   }
+
+  .text-container {
+  margin-top: 50px;
+
+  p {
+    font-size: 1rem;
+    letter-spacing: 10px;
+    position: absolute;
+    bottom: -250px;
+    animation: moveUp 1.5s 3s ease-in-out forwards;
+  }
+}
 }
 
 @media (min-width: 992px) and (max-width: 2048px) {
   .animation-container {
     max-width: 2048px;
-    max-height: 800px;
+    max-height: 500px;
+  }
+
+
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
   }
 }
 </style>

@@ -17,20 +17,23 @@
         slidesPerView: 3,
       },
       2048: {
-        slidesPerView: 5,
+        slidesPerView: 3,
       },
       4080: {
-        slidesPerView: 7,
+        slidesPerView: 6,
       },
     }"
   >
-    <swiper-slide v-for="(item, index) in slides" :key="index">
+    <swiper-slide class="swiper-slide" v-for="(item, index) in slides" :key="index">
         <slot :slide="item">
             <div class="title-container">
                 <h2>{{ item.title }}</h2>
             </div>
-            <div class="title-container">
+            <div class="description-container">
                 <h3>{{ item.description }}</h3>
+            </div>
+            <div class="creation-container">
+                <p>{{ item.creation }}</p>
             </div>
             <div class="text">
                 <p>{{ item.details }}</p>
@@ -61,29 +64,31 @@ export default {
 <style scoped lang="scss">
 
 swiper-container::part(pagination) {
+    bottom: 25%;
 }
 
 swiper-container::part(bullet-active) {
     background-color: #931116;
 }
 
-.text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.swiper-slide {
+    height: calc(100vh - (400px / 2));
+    }
 
     p {
         text-align: justify;
     }
-}
 
 @media (min-width:320px) and (max-width: 991px) {
+    .swiper-slide {
+    height: calc(100vh - (550px / 2));
+}
     .title-container {
-    margin: 2vw 25px;
+    margin: 2vw 25%;
     }
 
     .text {
-    margin: 25vw 25px;
+    margin: 25vw 5%;
         p {
             line-height: 25px;
         }
@@ -91,6 +96,9 @@ swiper-container::part(bullet-active) {
 }
 
 @media (min-width:992px) and (max-width: 2048px) {
+    swiper-container::part(pagination) {
+    top: 0%;
+    }
     .title-container {
     margin: 4vw 25px;
     }

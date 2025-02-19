@@ -89,6 +89,9 @@ swiper-container::part(bullet-active) {
     .swiper-slide {
     height: calc(100vh - (550px / 2));
 }
+swiper-container::part(pagination) {
+    bottom: 1%;
+}
     .title-container {
     margin: 2vw 25%;
     }

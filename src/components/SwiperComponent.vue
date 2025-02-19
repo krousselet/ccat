@@ -73,11 +73,17 @@ swiper-container::part(bullet-active) {
 
 .swiper-slide {
     height: calc(100vh - (400px / 2));
-    }
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     p {
         text-align: justify;
     }
+}
 
 @media (min-width:320px) and (max-width: 991px) {
     .swiper-slide {

@@ -29,6 +29,13 @@
 }
 
 @media (min-width: 320px) and (max-width: 990px) {
+
+  .container {
+    display: flex;
+    flex-direction:column-reverse;
+    width: 100%;
+    margin: 0 auto;
+  }
   .title-container {
       width: 100%;
       margin: 50px auto;
@@ -57,6 +64,7 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 10vh;
+
 
     .title-container {
       width: 50%;

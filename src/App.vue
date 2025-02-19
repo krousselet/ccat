@@ -11,6 +11,7 @@ import HeaderDisplay from './components/HeaderDisplay.vue';
       <router-link to="/about">Details</router-link>
       <router-link to="/convert">Convertir</router-link>
       <router-link to="/technicalterms">Glossaire</router-link>
+      <router-link to="/aircraft">Avion</router-link>
     </nav>
   <router-view />
 </template>
@@ -136,5 +137,11 @@ header {
 .red {
     background: rgb(247, 29, 37);
     border-radius: 0 0 7px 0;
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
 }
 </style>

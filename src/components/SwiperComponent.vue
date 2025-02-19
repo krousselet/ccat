@@ -87,7 +87,7 @@ swiper-container::part(bullet-active) {
 
 @media (min-width:320px) and (max-width: 991px) {
     .swiper-slide {
-    height: calc(100vh - (550px / 2));
+    min-height: calc(100vh - (550px / 2));
 }
 swiper-container::part(pagination) {
     bottom: 1%;

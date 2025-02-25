@@ -12,6 +12,7 @@ import HeaderDisplay from './components/HeaderDisplay.vue';
       <router-link to="/convert">Convertir</router-link>
       <router-link to="/technicalterms">Glossaire</router-link>
       <router-link to="/aircraft">Avion</router-link>
+      <router-link to="/altitude">Altitude</router-link>
     </nav>
   <router-view />
 </template>

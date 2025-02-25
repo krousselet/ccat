@@ -5,12 +5,12 @@
         </div>
       <div id="scene-container" class="scene-container"></div>
       <div class="controls">
-        <button @click="yaw(10)">Lacet Gauche | Yaw Right</button>
-        <button @click="yaw(-10)">Lacet Droite | Yaw Left</button>
+        <button @click="yaw(10)">Lacet Gauche | Yaw Left</button>
+        <button @click="yaw(-10)">Lacet Droite | Yaw Right</button>
         <button @click="pitch(10)">Tangage Haut | Pitch Up</button>
         <button @click="pitch(-10)">Tangage Bas | Pitch Down</button>
-        <button @click="roll(10)">Roulis Gauche | Roll Right</button>
-        <button @click="roll(-10)">Roulis Droite | Roll Left</button>
+        <button @click="roll(10)">Roulis Gauche | Roll Left</button>
+        <button @click="roll(-10)">Roulis Droite | Roll Right</button>
       </div>
     </div>
   </template>
@@ -82,6 +82,17 @@ export default {
 </script>
   
   <style scoped lang="scss">
+
+  @media (min-width:320px) and (max-width:991px) {
+    .scene-container {
+        height: 125px;
+    }
+        .controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+    }
+    }
   .controls {
     margin-top: 20px;
   
@@ -113,7 +124,7 @@ export default {
     }
     button:nth-child(6) {
         opacity: 0;
-        animation: appear .5s 1.9s ease-in-out forwards
+        animation: appear .5s .9s ease-in-out forwards
     }
 
   .container {

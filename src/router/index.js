@@ -52,6 +52,15 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "convert" */ "../views/AltitudeView.vue"),
   },
+  {
+    path: "/body",
+    name: "body",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "convert" */ "../views/BodyView.vue"),
+  },
 ];
 
 const router = createRouter({

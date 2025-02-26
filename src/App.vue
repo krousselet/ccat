@@ -13,6 +13,7 @@ import HeaderDisplay from './components/HeaderDisplay.vue';
       <router-link to="/technicalterms">Glossaire</router-link>
       <router-link to="/aircraft">Avion</router-link>
       <router-link to="/altitude">Altitude</router-link>
+      <router-link to="/body">Corps</router-link>
     </nav>
   <router-view />
 </template>
@@ -36,6 +37,8 @@ nav {
   align-items: center;
   width: 100%;
   margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 10px;
 
   a {
     font-weight: bold;

@@ -1,0 +1,330 @@
+<template>
+  <div class=title-container>
+    <h2>Coeur</h2>
+  </div>
+  <div class="wrapper">
+    <div class="heart-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="187" height="269" viewBox="0 0 187 269" fill="none">
+        <path
+            d="M130.705 129.8C130.471 128.886 130.957 128.432 132.794 127.711C134.56 128.154 135.102 128.701 134.883 130.497C135.191 131.758 134.473 132.086 132.794 131.889C131.209 132.221 130.669 131.902 130.705 129.8Z"
+            fill="#656464"
+            stroke="black"
+            stroke-width="1.3926"
+          />
+          <path
+            d="M46.4523 166.704C44.8283 159.255 44.6512 155.718 50.6301 154.867C53.8079 153.453 56.0495 153.291 60.3781 153.474C63.2636 155.436 64.9403 155.743 68.0374 154.867C69.1047 152.402 70.2063 151.687 72.9115 151.386C75.9078 155.863 77.9768 158.083 83.356 160.809C89.5044 164.107 93.0517 166.417 98.6746 172.275C102.659 178.766 105.62 181.359 112.601 183.415L129.312 198.734C130.493 201.327 129.952 201.76 128.615 202.215L93.1042 200.823C80.0088 198.557 75.4506 196.566 69.43 192.467C53.0357 177.946 48.8926 172.84 46.4523 166.704Z"
+            fill="url(#paint0_linear_51_3)"
+             stroke="black"
+          />
+          <circle cx="65" cy="165" r="5" fill="red" stroke="black" stroke-width="1"
+          @click="showInfo('Ventricule droit', 'Le ventricule droit est une cavité musculaire inférieure...')"
+        />
+          <path
+            d="M109.815 110.304C104.952 110.506 103.729 111.549 102.156 113.785C102.344 121.972 101.615 126.423 97.9782 133.978C96.9966 140.152 97.0507 143.52 98.6745 149.297L120.26 172.274C120.239 168.056 120.65 166.613 121.652 164.615C120.777 156.121 121.446 154.073 123.045 151.386C128.631 142.382 127.568 138.174 126.526 130.497C123.731 113.924 118.897 112.235 109.815 110.304Z"
+            fill="url(#paint1_linear_51_3)"
+            stroke="black"
+            stroke-width="1.3926"
+          />
+          <circle cx="113" cy="125" r="5" fill="red" stroke="black" stroke-width="1"
+          @click="showInfo('Ventricule gauche', 'Le ventricule gauche est la cavité du cœur...')"
+        />
+          <path
+            d="M145.326 108.215C135.375 105.784 130.143 106.139 120.956 107.519C125.745 114.126 128.422 117.838 130.007 127.015H136.274C135.448 119.721 136.842 115.611 145.326 108.215Z"
+            fill="url(#paint2_linear_51_3)"
+            stroke="black"
+            stroke-width="1.3926"
+            @click="showInfo('Valve aortique', 'La valve aortique contrôle le passage du sang entre le ventricule gauche et l\'aorte.')"
+          />
+          <circle cx="110" cy="109" r="5" fill="red" stroke="black" stroke-width="1"
+          @click="showInfo('Valve aortique', 'La valve aortique contrôle le passage du sang entre le ventricule gauche et l\'aorte.')"
+        />
+        <path 
+        d="M145.326 108.215C135.375 105.784 130.143 106.139 120.956 107.519C125.745 114.126 128.422 117.838 130.007 127.015H136.274C135.448 119.721 136.842 115.611 145.326 108.215Z" 
+        fill="url(#paint2_linear_51_3)" 
+        stroke="black" 
+        stroke-width="1.3926"
+        />
+        <path 
+        d="M109.12 106.823C107.314 107.098 106.614 107.723 107.031 109.608C107.4 110.271 108.369 110.449 111.904 110.304V108.215C111.508 107.187 110.903 106.879 109.12 106.823Z" 
+        fill="#470D0B" 
+        stroke="black" 
+        stroke-width="1.3926" 
+        @click="showInfo('Valve Aortique', 'Contrôle le passage du sang entre le ventricule gauche et l\'aorte.')"
+        />
+        <path 
+        d="M77.0886 106.126L75.696 111C71.734 97.0102 68.2225 93.0109 59.6811 92.2002C51.244 92.6358 46.9595 94.8891 41.5774 108.911C36.8932 122.005 37.127 129.13 40.1848 141.637L45.7552 144.423C55.2017 146.252 57.6202 147.754 60.3774 150.689V153.474H55.5033C43.0512 154.719 42.9185 159.044 47.844 169.489C55.8937 182.131 61.9932 187.426 74.3034 195.252C86.9262 200.729 96.7953 201.799 117.474 201.519C128.821 203.401 131.745 203.003 130.007 199.43L111.904 182.023C91.7788 159.494 89.3519 154.845 89.622 150.689C91.7943 138.001 94.6595 130.667 102.155 117.267C97.1693 131.664 95.7694 139.011 98.6739 149.297L131.4 184.112C146.673 196.69 148.07 189.167 151.593 177.845V155.563C154.558 138.654 152.602 129.421 145.326 115.178C139.302 122.278 137.887 127.024 136.97 127.015C134.985 119.514 136.6 115.536 145.326 108.911C148.058 104.265 148.177 101.914 148.111 97.7706C145.054 89.1114 141.951 86.257 136.97 80.3631C142.434 82.0068 145.61 83.4122 152.289 90.1113C153.883 96.7898 154.456 101.842 154.378 115.178C161.9 125.526 166.01 131.892 169 166.008C168.565 185.585 170.148 198.334 158.556 207.089C150.732 211.501 149.442 217.859 138.763 218.927C125.77 215.921 95.9934 214.052 80.9706 211.964C65.9478 209.875 51.8279 197.762 45.7552 188.986C30.6619 174.654 28.2779 156.168 26.2588 119.356C30.9337 116.521 31.9832 114.821 32.5255 111.697L39.4885 99.1632C41.1402 96.4959 41.1299 94.9658 40.1848 92.2002C49.5965 83.4122 56.023 82.359 68.733 87.3261L76.3923 100.556L77.0886 106.126Z" 
+        fill="#E3C398" 
+        stroke="black" 
+        stroke-width="1.3926"
+        />
+        <path 
+        d="M61.0739 151.386C57.9277 146.756 54.1838 145.638 46.4517 144.423C49.9246 133.42 55.2384 129.811 74.9999 131.193C69.2813 140.652 69.7017 143.967 71.5184 149.297C64.3487 147.857 62.8892 148.918 61.0739 151.386Z" 
+        fill="url(#paint3_linear_51_3)" 
+        stroke="black" 
+        stroke-width="1.3926"/>
+        <path
+        d="M67.3426 152.778H63.1648C62.5655 150.566 63.3113 150.048 65.95 149.993C67.2089 150.76 67.5216 151.358 67.3426 152.778Z" 
+        fill="#656464" 
+        stroke="black" 
+        stroke-width="1.3926"
+        @click="showInfo('Valve Tricuspide', 'La valve tricuspide (valve atrio-ventriculaire) correspond à la valve du cœur qui crée une séparation entre le ventricule droit et l\'oreillette droite. Elle a pour rôle d\'empêcher que le sang ne reflue entre l\'oreillette droite et le ventricule droit.')"
+        />
+        <circle cx="65" cy="150" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Valve Tricuspide', 'La valve tricuspide (valve atrio-ventriculaire) correspond à la valve du cœur qui crée une séparation entre le ventricule droit et l\'oreillette droite. Elle a pour rôle d\'empêcher que le sang ne reflue entre l\'oreillette droite et le ventricule droit.')"
+        />
+        @click="showInfo('Veine Cave Supérieure', 'La veine cave supérieure est une veine large et courte qui transporte la majeure partie du sang désoxygéné de la partie du corps située au-dessus du diaphragme vers l\'atrium droit (anciennement oreillette droite) du cœur.')"
+        <path
+        d="M39.4903 134.674C41.7349 143.156 40.4354 141.177 45.757 143.726C51.2808 131.906 58.1161 129.658 75.0005 131.193C76.9816 126.783 76.4481 121.2 75.0005 110.304C70.5258 97.6613 67.1499 93.9874 59.6828 92.8965C41.099 93.4479 37.2457 126.193 39.4903 134.674Z"
+        fill="url(#paint4_linear_51_3)"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Oreillette Droite', 'Le rôle de l\'oreillette droite du cœur est de recevoir le sang veineux désoxygéné. Elle reçoit le sang provenant des veines caves supérieure et inférieure et l\'envoie au ventricule droit. La valvule tricuspide sépare l\'oreillette droite du ventricule droit et s\'ouvre pour permettre au sang de pénétrer dans le ventricule droit')"
+        />
+        <circle cx="60" cy="115" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Oreillette Gauche', 'L\'oreillette gauche joue un rôle important dans le remplissage ventriculaire gauche. Elle agit comme une “pompe contractile” qui fournit 15 à 30% du remplissage total du ventricule gauche, un “réservoir” qui collecte le retour veineux pulmonaire pendant la systole ventriculaire et un “conduit” permettant le passage du sang de l\’oreillette au ventricule gauche pendant la diastole ventriculaire précoce. Le sang oxygéné qui provient des poumons est conduit dans l\'oreillette gauche par les quatre veines pulmonaires')"
+        />
+        <path
+        d="M146.023 107.519C135.532 105.92 129.841 105.759 120.26 107.519L110.512 96.378C108.936 91.0335 111.465 88.373 118.171 83.8446C122.136 81.0778 127.052 80.6488 136.971 80.3631C145.978 90.9879 150.413 96.9424 146.023 107.519Z"
+        fill="url(#paint5_linear_51_3)"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Oreillette Gauche', 'L\'oreillette gauche joue un rôle important dans le remplissage ventriculaire gauche. Elle agit comme une “pompe contractile” qui fournit 15 à 30% du remplissage total du ventricule gauche, un “réservoir” qui collecte le retour veineux pulmonaire pendant la systole ventriculaire et un “conduit” permettant le passage du sang de l\’oreillette au ventricule gauche pendant la diastole ventriculaire précoce. Le sang oxygéné qui provient des poumons est conduit dans l\'oreillette gauche par les quatre veines pulmonaires')"
+        />
+        <circle cx="130" cy="95" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Oreillette Gauche', 'L\'oreillette gauche joue un rôle important dans le remplissage ventriculaire gauche. Elle agit comme une “pompe contractile” qui fournit 15 à 30% du remplissage total du ventricule gauche, un “réservoir” qui collecte le retour veineux pulmonaire pendant la systole ventriculaire et un “conduit” permettant le passage du sang de l\’oreillette au ventricule gauche pendant la diastole ventriculaire précoce. Le sang oxygéné qui provient des poumons est conduit dans l\'oreillette gauche par les quatre veines pulmonaires')"
+        />
+        <path
+        d="M77.7853 119.356C75.9952 114.685 75.9528 111.788 77.7853 106.126C88.2258 104.419 92.7637 105.203 97.978 110.304L99.3706 117.963C99.3874 120.475 100.113 122.043 92.4076 122.837C89.0401 122.396 88.3271 120.977 87.5335 117.963C84.9015 119.564 82.6303 119.741 77.7853 119.356Z"
+        fill="url(#paint6_linear_51_3)"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Valvule Sigmoïde', 'Une valve sigmoïde est une valve artérielle assurant la liaison entre un ventricule et les vaisseaux partant du cœur.')"
+        />
+        <circle cx="90" cy="112" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Valvule Sigmoïde', 'Une valve sigmoïde est une valve artérielle assurant la liaison entre un ventricule et les vaisseaux partant du cœur.')"
+        />
+        <path d="M24.868 99.1632H38.794C38.1149 102.599 36.9053 104.228 33.9185 106.822H22.7791C20.8344 103.18 21.4095 101.531 24.868 99.1632Z" fill="#716173"/>
+        <path d="M33.2222 111.697H23.474C20.6234 114.502 20.8556 116.006 22.0815 118.66H26.9556C30.8972 116.556 31.7145 114.803 33.2222 111.697Z" fill="#716173"/>
+        <path
+        d="M24.868 99.1632H38.794C38.1149 102.599 36.9053 104.228 33.9185 106.822H22.7791C20.8344 103.18 21.4095 101.531 24.868 99.1632Z"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Veines Pulmonaires droite', 'Les quatre veines pulmonaires (une pour chaque lobe pulmonaire) sont des veines chargées de véhiculer le sang oxygéné jusqu\'aux poumons et jusqu\'au cœur, chargé de le propulser dans le reste de l\'organisme')"
+        />
+        <circle cx="25" cy="106" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Veines Pulmonaires droite', 'Les quatre veines pulmonaires (une pour chaque lobe pulmonaire) sont des veines chargées de véhiculer le sang oxygéné jusqu\'aux poumons et jusqu\'au cœur, chargé de le propulser dans le reste de l\'organisme')"
+        />
+        <path
+        d="M33.2222 111.697H23.474C20.6234 114.502 20.8556 116.006 22.0815 118.66H26.9556C30.8972 116.556 31.7145 114.803 33.2222 111.697Z"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Veines Pulmonaires droite', 'Les quatre veines pulmonaires (une pour chaque lobe pulmonaire) sont des veines chargées de véhiculer le sang oxygéné jusqu\'aux poumons et jusqu\'au cœur, chargé de le propulser dans le reste de l\'organisme')"
+        />
+        <path 
+        d="M101.46 113.785C95.3308 106.233 90.4448 104.115 77.7861 106.126L77.0898 101.252C89.0789 84.4475 95.3083 75.5564 93.801 73.4001L83.3565 66.4371L86.838 47.637L104.245 53.2074C114.44 55.6442 120.581 55.9695 132.794 54.6L157.164 50.4222L158.557 56.6889C149.546 57.4191 147.799 58.6619 147.416 61.563C148.902 65.5077 151.612 66.3839 158.557 66.4371V73.4001L141.149 71.3112C131.303 73.5525 127.365 75.2469 123.046 78.9705C106.631 92.3248 103.227 99.8503 101.46 113.785Z"
+        fill="#CCB7BB"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Artère pulmonaire', 'L\'artère pulmonaire droite est un vaisseau sanguin essentiel dans le corps humain, responsable de transporter le sang oxygéné du ventricule droit du cœur vers les poumons pour y subir un processus de réoxygénation.')"
+        />
+        <circle cx="107" cy="70" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Artère pulmonaire', 'L\'artère pulmonaire droite est un vaisseau sanguin essentiel dans le corps humain, responsable de transporter le sang oxygéné du ventricule droit du cœur vers les poumons pour y subir un processus de réoxygénation.')"
+        />
+        <path d="M162.733 88.7187C159.201 90.0806 156.97 90.0985 152.985 90.1113C153.449 92.4323 154.377 97.2135 154.377 97.7706C157.368 95.4525 159.674 94.516 164.822 93.5928L162.733 88.7187Z" fill="#716173"/>
+        <path d="M164.822 102.645C159.4 102.239 157.286 101.541 154.377 99.8595V108.215L165.518 107.519C163.631 105.824 163.884 104.704 164.822 102.645Z" fill="#716173"/>
+        <path
+        d="M162.733 88.7187C159.201 90.0806 156.97 90.0985 152.985 90.1113C153.449 92.4323 154.377 97.2135 154.377 97.7706C157.368 95.4525 159.674 94.516 164.822 93.5928L162.733 88.7187Z"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Veines Pulmonaires gauche', 'Les quatre veines pulmonaires (une pour chaque lobe pulmonaire) sont des veines chargées de véhiculer le sang oxygéné jusqu\'aux poumons et jusqu\'au cœur, chargé de le propulser dans le reste de l\'organisme')"
+        />
+        <circle cx="160" cy="96" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Veines Pulmonaires gauche', 'Les quatre veines pulmonaires (une pour chaque lobe pulmonaire) sont des veines chargées de véhiculer le sang oxygéné jusqu\'aux poumons et jusqu\'au cœur, chargé de le propulser dans le reste de l\'organisme')"
+        />
+        <path
+        d="M164.822 102.645C159.4 102.239 157.286 101.541 154.377 99.8595V108.215L165.518 107.519C163.631 105.824 163.884 104.704 164.822 102.645Z"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Veines Pulmonaires gauche', 'Les quatre veines pulmonaires (une pour chaque lobe pulmonaire) sont des veines chargées de véhiculer le sang oxygéné jusqu\'aux poumons et jusqu\'au cœur, chargé de le propulser dans le reste de l\'organisme')"
+        />
+        <path d="M61.0755 58.0816C58.2903 65.0446 65.0939 84.364 77.0904 100.556L93.8014 76.8817L91.0163 67.1335C90.2221 59.9221 91.4442 57.1429 95.8903 53.9038C101.211 50.7737 104.532 50.9642 111.905 54.6001L124.439 78.2743L136.276 78.9706L132.098 53.9038C129.802 45.3492 128.434 41.9915 125.831 39.9779L108.424 28.1408C105.694 26.5392 105.665 25.8625 105.639 24.6593V17.6963L104.246 17H99.3718L97.9792 17.6963V26.0519H94.4977L91.0163 17.6963L84.0533 19.7852V23.2667L87.5348 30.926L85.4459 33.7112H81.9644L75.0014 24.6593H72.9129L68.0385 28.1408V30.926C71.0429 34.0037 72.757 35.7049 72.9129 41.3705C71.52 46.9408 63.8607 51.1186 61.0755 58.0816Z" fill="#D3574E"/>
+        <path d="M98.6755 246.082C99.692 222.133 98.5488 216.926 95.194 214.053L125.831 217.534C120.737 217.484 122.856 231.361 123.046 246.082C121.175 250.36 118.775 251.8 112.602 253.045C104.969 252.183 101.764 250.804 98.6755 246.082Z"
+        fill="#D3574E"
+        stroke="black"
+        />
+        <circle cx="110" cy="230" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Aorte', 'L\'aorte est la plus grande et la principale artère du corps humain, partant du cœur, plus précisément du ventricule gauche. Elle a pour fonction de distribuer le sang oxygéné à l\'ensemble de l\'organisme, sauf à la circulation fonctionnelle des poumons. L\'aorte se divise en plusieurs parties, notamment l\'aorte thoracique et l\'aorte abdominale, et elle est essentielle pour le transport du sang vers les organes et les membres')"
+        />
+        <path 
+        d="M61.0755 58.0816C58.2903 65.0446 65.0939 84.364 77.0904 100.556L93.8014 76.8817L91.0163 67.1335C90.2221 59.9221 91.4442 57.1429 95.8903 53.9038C101.211 50.7737 104.532 50.9642 111.905 54.6001L124.439 78.2743L136.276 78.9706L132.098 53.9038C129.802 45.3492 128.434 41.9915 125.831 39.9779L108.424 28.1408C105.694 26.5392 105.665 25.8625 105.639 24.6593V17.6963L104.246 17H99.3718L97.9792 17.6963V26.0519H94.4977L91.0163 17.6963L84.0533 19.7852V23.2667L87.5348 30.926L85.4459 33.7112H81.9644L75.0014 24.6593H72.9129L68.0385 28.1408V30.926C71.0429 34.0037 72.757 35.7049 72.9129 41.3705C71.52 46.9408 63.8607 51.1186 61.0755 58.0816Z" 
+        stroke="black" 
+        stroke-width="1.3926"
+        @click="showInfo('Aorte', 'L\'aorte est la plus grande et la principale artère du corps humain, partant du cœur, plus précisément du ventricule gauche. Elle a pour fonction de distribuer le sang oxygéné à l\'ensemble de l\'organisme, sauf à la circulation fonctionnelle des poumons. L\'aorte se divise en plusieurs parties, notamment l\'aorte thoracique et l\'aorte abdominale, et elle est essentielle pour le transport du sang vers les organes et les membres')"
+        />
+        <circle cx="80" cy="70" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Aorte', 'L\'aorte est la plus grande et la principale artère du corps humain, partant du cœur, plus précisément du ventricule gauche. Elle a pour fonction de distribuer le sang oxygéné à l\'ensemble de l\'organisme, sauf à la circulation fonctionnelle des poumons. L\'aorte se divise en plusieurs parties, notamment l\'aorte thoracique et l\'aorte abdominale, et elle est essentielle pour le transport du sang vers les organes et les membres')"
+        />
+        <path
+        d="M98.6755 246.082C99.692 222.133 98.5488 216.926 95.194 214.053L125.831 217.534C120.737 217.484 122.856 231.361 123.046 246.082C121.175 250.36 118.775 251.8 112.602 253.045C104.969 252.183 101.764 250.804 98.6755 246.082Z"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Aorte', 'L\'aorte est la plus grande et la principale artère du corps humain, partant du cœur, plus précisément du ventricule gauche. Elle a pour fonction de distribuer le sang oxygéné à l\'ensemble de l\'organisme, sauf à la circulation fonctionnelle des poumons. L\'aorte se divise en plusieurs parties, notamment l\'aorte thoracique et l\'aorte abdominale, et elle est essentielle pour le transport du sang vers les organes et les membres')"
+        />
+        <path
+        d="M36.7036 46.9407V51.1185C38.1883 56.1049 38.8519 59.3305 39.4888 66.4371L40.8814 91.5038C44.3557 88.8059 46.4954 87.2901 53.4148 84.5408C59.6261 84.498 63.0063 85.029 68.7333 87.326L63.163 78.2742C60.6183 72.5722 60.5806 69.6262 60.3778 64.3482C60.4717 58.4722 61.3091 56.1691 63.163 52.5111V46.9407L56.8963 43.4592H46.4518L36.7036 46.9407Z"
+        fill="url(#paint7_linear_51_3)"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Veine Cave Supérieure', 'La veine cave supérieure est une veine large et courte qui transporte la majeure partie du sang désoxygéné de la partie du corps située au-dessus du diaphragme vers l\'atrium droit (anciennement oreillette droite) du cœur.')"
+        />
+        <circle cx="53" cy="75" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Veine Cave Supérieure', 'La veine cave supérieure est une veine large et courte qui transporte la majeure partie du sang désoxygéné de la partie du corps située au-dessus du diaphragme vers l\'atrium droit (anciennement oreillette droite) du cœur.')"
+        />
+        <path
+        d="M35.3107 65.7409L19.9921 65.0446C18.5619 68.0357 18.7812 69.7127 19.9921 72.7039H32.5254C34.9933 75.1508 34.7945 76.5238 32.5254 78.9705H22.0809C20.1131 80.5139 19.7624 81.4546 19.2958 83.1483C19.161 85.2258 19.2274 86.3642 21.3847 88.0224L40.8811 85.2372L39.4885 64.3483L35.3107 65.7409Z"
+        fill="#B790A7"
+        stroke="black"
+        stroke-width="1.3926"/>
+        @click="showInfo('Veine Pulmonaires droite', 'Les veines pulmonaires sont les veines qui transportent du sang riche en oxygène des poumons vers l\'atrium gauche (anciennement oreillette gauche) du cœur. Elles sont au nombre de quatre, soit deux pour chaque poumon. ')"
+        <path
+        d="M51.3258 233.549L46.4517 191.771C53.4487 200.918 59.202 205.139 73.6073 210.571L74.9999 232.156C73.6086 237.131 71.4804 239.05 64.5554 240.512C56.3255 238.611 53.3484 237.113 51.3258 233.549Z"
+        fill="#89B7D3"
+        stroke="black"
+        stroke-width="1.3926"
+        @click="showInfo('Veine Cave Inférieure', 'La veine cave inférieure est une veine large située principalement dans l\'abdomen, issue de la réunion des deux veines iliaques communes et qui s\'ouvre dans l\'atrium droit (anciennement oreillette droite) du cœur.')"
+        />
+        <circle cx="65" cy="220" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Veine Cave Inférieure', 'La veine cave inférieure est une veine large située principalement dans l\'abdomen, issue de la réunion des deux veines iliaques communes et qui s\'ouvre dans l\'atrium droit (anciennement oreillette droite) du cœur.')"
+        />
+        <path d="M47.1502 45.5481C41.7672 47.1079 39.3116 47.9972 40.1872 49.7259C41.4522 50.5336 43.3548 50.9904 48.5428 51.8148H54.1132C54.1132 51.8148 58.2902 51.1185 58.9873 49.0296C59.6844 46.9407 58.4922 46.1211 54.8095 45.5481C51.9181 45.197 50.2051 45.3226 47.1502 45.5481Z"
+        fill="url(#paint8_linear_51_3)"
+        stroke="black"
+        stroke-width="1.3926"/>
+        <circle cx="132" cy="130" r="5" fill="red" stroke="black" stroke-width="1"
+        @click="showInfo('Valve Mitrale','La valve mitrale est une des quatre valves du cœur qui permettent au sang de circuler dans la bonne direction. Elle est située entre l\'oreillette gauche et le ventricule gauche du cœur. La valve mitrale est également appelée valve atrio-ventriculaire gauche. Elle est constituée de deux cusps ou volets qui s\'ouvrent et se ferment une fois à chaque battement de cœur. Si la valve ne s\'ouvre ou ne se ferme pas correctement, la circulation sanguine peut être réduite')"
+        />
+        <defs>
+        <linearGradient id="paint0_linear_51_3" x1="61.7707" y1="161.134" x2="116.082" y2="197.341" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#EDD2AC"/>
+        <stop offset="0.472356" stop-color="#EDC89B"/>
+        <stop offset="1" stop-color="#A2582C"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_51_3" x1="107.727" y1="111.697" x2="117.475" y2="163.919" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#A54F2A"/>
+        <stop offset="0.376234" stop-color="#FDDA98"/>
+        <stop offset="1" stop-color="#A66229"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear_51_3" x1="133.141" y1="106.435" x2="133.141" y2="127.015" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#D8DEBD"/>
+        <stop offset="1" stop-color="#F2EAC6"/>
+        </linearGradient>
+        <linearGradient id="paint3_linear_51_3" x1="71.5184" y1="133.282" x2="61.0739" y2="147.904" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#EFEDD7"/>
+        <stop offset="1" stop-color="#DBD2AF"/>
+        </linearGradient>
+        <linearGradient id="paint4_linear_51_3" x1="57.605" y1="92.8965" x2="57.593" y2="128.408" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#927A62"/>
+        <stop offset="1" stop-color="#CE9773"/>
+        </linearGradient>
+        <linearGradient id="paint5_linear_51_3" x1="128.896" y1="80.3631" x2="128.896" y2="107.519" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9F6740"/>
+        <stop offset="1" stop-color="#E6BA7F"/>
+        </linearGradient>
+        <linearGradient id="paint6_linear_51_3" x1="79.8743" y1="107.519" x2="95.8891" y2="117.963" gradientUnits="userSpaceOnUse">
+        <stop offset="0.0593933" stop-color="#E2DAEA"/>
+        <stop offset="1" stop-color="#514B63"/>
+        </linearGradient>
+        <linearGradient id="paint7_linear_51_3" x1="49.9333" y1="46.2444" x2="55.5037" y2="81.0594" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#6CA3D3"/>
+        <stop offset="1" stop-color="#6BB6DF"/>
+        </linearGradient>
+        <linearGradient id="paint8_linear_51_3" x1="42.9716" y1="49.0296" x2="58.2902" y2="48.3333" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#4D7796"/>
+        <stop offset="0.527149" stop-color="#5D9DCA"/>
+        <stop offset="1" stop-color="#5385AA"/>
+        </linearGradient>
+        </defs>
+    </svg>
+    </div>
+    <div class="info-container">
+      <transition name="fade">
+        <p v-if="selectedPart">
+          <strong>{{ selectedPart.name }}</strong>: {{ selectedPart.description }}
+        </p>
+      </transition>
+    </div>
+  </div>
+  </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        selectedPart: null
+      };
+    },
+    methods: {
+      showInfo(name, description) {
+        this.selectedPart = { name, description };
+      }
+    }
+  };
+  </script>
+  
+  <style scoped>
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  margin: 0 auto;
+  
+  .heart-container {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    
+  }
+  .info-container {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:320px) and (max-width:991px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin: 0 auto;
+
+    .heart-container {
+      width: 100%;
+      height: 50%;
+      margin: 0 auto;
+
+    }
+    .info-container {
+      width: 100%;
+      height: 50%;
+      margin: 0 auto;
+
+      p {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+</style>

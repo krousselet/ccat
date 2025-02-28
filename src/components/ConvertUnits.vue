@@ -1,39 +1,79 @@
 <template>
-    <main>
-        <section v-for="(conversion, index) in conversions" :key="index" :id="conversion.id">
-            <div class="title-container">
-                <h3>{{ conversion.title }}</h3>
-            </div>
-            <ul>
-                <li>
-                    <math v-html="conversion.formula"></math>
-                </li>
-            </ul>
-            <form @submit.prevent="convert(conversion)">
-                <div class="form-container">
-                    <label :for="conversion.inputId">{{ conversion.label }}</label>
-                    <input 
-                        type="number" 
-                        v-model.number="conversion.value" 
-                        :id="conversion.inputId" 
-                        :min="0"
-                        required 
-                    />
-                </div>
-                <button type="submit">CONVERTIR</button>
-                <div class="answer-container">
-                    <transition name="fade">
-                        <p v-if="conversion.answer" class="answer">{{ conversion.answer }}</p>
-                    </transition>
-                </div>
-            </form>
-        </section>
-    </main>
+    <swiper 
+    :space-between="50"
+    :slides-per-view="7"
+    :navigation="{
+        enabled
+    }"
+    :pagination="{
+      hideOnClick: false,
+    }"
+    mousewheel-enabled="true"
+    :breakpoints="{
+      320: {
+        slidesPerView: 1,
+      },
+      550: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      2048: {
+        slidesPerView: 5,
+      },
+      4080: {
+        slidesPerView: 6,
+      },
+    }"
+    >
+            <swiper-slide v-for="(conversion, index) in conversions" :key="index">
+                <section :id="conversion.id">
+                    <div class="title-container">
+                        <h3>{{ conversion.title }}</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <math v-html="conversion.formula"></math>
+                        </li>
+                    </ul>
+                    <form @submit.prevent="convert(conversion)">
+                        <div class="form-container">
+                            <label :for="conversion.inputId">{{ conversion.label }}</label>
+                            <input 
+                                type="number" 
+                                v-model.number="conversion.value" 
+                                :id="conversion.inputId" 
+                                :min="0"
+                                required 
+                            />
+                        </div>
+                        <button class="convert" type="submit">CONVERTIR</button>
+                        <div class="answer-container">
+                            <transition name="fade">
+                                <p v-if="conversion.answer" class="answer">{{ conversion.answer }}</p>
+                            </transition>
+                        </div>
+                    </form>
+                </section>
+            </swiper-slide>
+        </swiper>
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/navigation'; 
+import 'swiper/css/pagination';
 export default {
     name: "ConvertUnits",
+    components: {
+        Swiper,   // Register Swiper component
+        SwiperSlide, // Register SwiperSlide component
+    },
     data() {
         return {
             conversions: [
@@ -60,12 +100,16 @@ export default {
 
 <style scoped lang="scss">
 
+.convert {
+    margin: 50px auto;
+}
 .answer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     color: #007bff;
+    margin: 50px auto;
 }
 
 @media (min-width:320px) and (max-width:990px) {

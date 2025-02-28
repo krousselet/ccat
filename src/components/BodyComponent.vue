@@ -373,6 +373,7 @@ circle {
 }
 
 .wrapper {
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -381,7 +382,13 @@ circle {
   
   .heart-container {
     width: 100%;
-    height: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .body-container {
+    width: 100%;
+    height: auto;
     margin: 0 auto;
   }
   .info-container {
@@ -390,7 +397,7 @@ circle {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50%;
+    height: 100%;
     margin: 0 auto;
 
     .text-container {

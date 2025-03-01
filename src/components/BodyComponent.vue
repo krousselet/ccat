@@ -16,8 +16,8 @@
             fill="url(#paint0_linear_51_3)"
              stroke="black"
           />
-          <circle cx="65" cy="165" r="5" fill="red" stroke="black" stroke-width="1"
-          @click="showInfo('heart', 'Ventricule droit', 'Le ventricule droit est une cavité musculaire inférieure...')"
+          <circle cx="65" cy="165" r="5" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('heart', 'Ventricule droit', 'Le ventricule droit se contracte et envoie le sang par la valvule pulmonaire dans l\'artère pulmonaire, puis dans les poumons. Simultanément, le sang riche en oxygène provenant des poumons est amené au cœur par les veines pulmonaires.')"
         />
           <path
             d="M109.815 110.304C104.952 110.506 103.729 111.549 102.156 113.785C102.344 121.972 101.615 126.423 97.9782 133.978C96.9966 140.152 97.0507 143.52 98.6745 149.297L120.26 172.274C120.239 168.056 120.65 166.613 121.652 164.615C120.777 156.121 121.446 154.073 123.045 151.386C128.631 142.382 127.568 138.174 126.526 130.497C123.731 113.924 118.897 112.235 109.815 110.304Z"
@@ -25,8 +25,8 @@
             stroke="black"
             stroke-width="1.3926"
           />
-          <circle cx="113" cy="125" r="5" fill="red" stroke="black" stroke-width="1"
-          @click="showInfo('heart','Ventricule gauche', 'Le ventricule gauche est la cavité du cœur...')"
+          <circle cx="113" cy="125" r="5" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('heart','Ventricule gauche', 'Le ventricule gauche se contracte et propulse le sang dans l\'aorte. La valve située au départ de l\'aorte se ferme. Le sang est distribué dans tout l\'organisme. Les artères coronaires, alimentées par l\'aorte, assurent l\'approvisionnement en sang oxygéné du cœur lui-même.')"
         />
           <path
             d="M145.326 108.215C135.375 105.784 130.143 106.139 120.956 107.519C125.745 114.126 128.422 117.838 130.007 127.015H136.274C135.448 119.721 136.842 115.611 145.326 108.215Z"
@@ -35,7 +35,7 @@
             stroke-width="1.3926"
             @click="showInfo('heart','Valve aortique', 'La valve aortique contrôle le passage du sang entre le ventricule gauche et l\'aorte.')"
           />
-          <circle cx="110" cy="109" r="5" fill="red" stroke="black" stroke-width="1"
+          <circle cx="110" cy="109" r="5" fill="yellow" stroke="black" stroke-width="1"
           @click="showInfo('heart','Valve aortique', 'La valve aortique contrôle le passage du sang entre le ventricule gauche et l\'aorte.')"
         />
         <path 
@@ -69,7 +69,7 @@
         stroke-width="1.3926"
         @click="showInfo('heart','Valve Tricuspide', 'La valve tricuspide (valve atrio-ventriculaire) correspond à la valve du cœur qui crée une séparation entre le ventricule droit et l\'oreillette droite. Elle a pour rôle d\'empêcher que le sang ne reflue entre l\'oreillette droite et le ventricule droit.')"
         />
-        <circle cx="65" cy="150" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="65" cy="150" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Valve Tricuspide', 'La valve tricuspide (valve atrio-ventriculaire) correspond à la valve du cœur qui crée une séparation entre le ventricule droit et l\'oreillette droite. Elle a pour rôle d\'empêcher que le sang ne reflue entre l\'oreillette droite et le ventricule droit.')"
         />
         @click="showInfo('heart','Veine Cave Supérieure', 'La veine cave supérieure est une veine large et courte qui transporte la majeure partie du sang désoxygéné de la partie du corps située au-dessus du diaphragme vers l\'atrium droit (anciennement oreillette droite) du cœur.')"
@@ -80,8 +80,8 @@
         stroke-width="1.3926"
         @click="showInfo('heart','Oreillette Droite', 'Le rôle de l\'oreillette droite du cœur est de recevoir le sang veineux désoxygéné. Elle reçoit le sang provenant des veines caves supérieure et inférieure et l\'envoie au ventricule droit. La valvule tricuspide sépare l\'oreillette droite du ventricule droit et s\'ouvre pour permettre au sang de pénétrer dans le ventricule droit')"
         />
-        <circle cx="60" cy="115" r="5" fill="red" stroke="black" stroke-width="1"
-        @click="showInfo('heart','Oreillette Gauche', 'L\'oreillette gauche joue un rôle important dans le remplissage ventriculaire gauche. Elle agit comme une “pompe contractile” qui fournit 15 à 30% du remplissage total du ventricule gauche, un “réservoir” qui collecte le retour veineux pulmonaire pendant la systole ventriculaire et un “conduit” permettant le passage du sang de l\’oreillette au ventricule gauche pendant la diastole ventriculaire précoce. Le sang oxygéné qui provient des poumons est conduit dans l\'oreillette gauche par les quatre veines pulmonaires')"
+        <circle cx="60" cy="115" r="5" fill="yellow" stroke="black" stroke-width="1"
+        @click="showInfo('heart','Oreillette Droite', 'Le rôle de l\'oreillette droite du cœur est de recevoir le sang veineux désoxygéné. Elle reçoit le sang provenant des veines caves supérieure et inférieure et l\'envoie au ventricule droit. La valvule tricuspide sépare l\'oreillette droite du ventricule droit et s\'ouvre pour permettre au sang de pénétrer dans le ventricule droit')"
         />
         <path
         d="M146.023 107.519C135.532 105.92 129.841 105.759 120.26 107.519L110.512 96.378C108.936 91.0335 111.465 88.373 118.171 83.8446C122.136 81.0778 127.052 80.6488 136.971 80.3631C145.978 90.9879 150.413 96.9424 146.023 107.519Z"
@@ -90,7 +90,7 @@
         stroke-width="1.3926"
         @click="showInfo('heart','Oreillette Gauche', 'L\'oreillette gauche joue un rôle important dans le remplissage ventriculaire gauche. Elle agit comme une “pompe contractile” qui fournit 15 à 30% du remplissage total du ventricule gauche, un “réservoir” qui collecte le retour veineux pulmonaire pendant la systole ventriculaire et un “conduit” permettant le passage du sang de l\’oreillette au ventricule gauche pendant la diastole ventriculaire précoce. Le sang oxygéné qui provient des poumons est conduit dans l\'oreillette gauche par les quatre veines pulmonaires')"
         />
-        <circle cx="130" cy="95" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="130" cy="95" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Oreillette Gauche', 'L\'oreillette gauche joue un rôle important dans le remplissage ventriculaire gauche. Elle agit comme une “pompe contractile” qui fournit 15 à 30% du remplissage total du ventricule gauche, un “réservoir” qui collecte le retour veineux pulmonaire pendant la systole ventriculaire et un “conduit” permettant le passage du sang de l\’oreillette au ventricule gauche pendant la diastole ventriculaire précoce. Le sang oxygéné qui provient des poumons est conduit dans l\'oreillette gauche par les quatre veines pulmonaires')"
         />
         <path
@@ -100,7 +100,7 @@
         stroke-width="1.3926"
         @click="showInfo('heart','Valvule Sigmoïde', 'Une valve sigmoïde est une valve artérielle assurant la liaison entre un ventricule et les vaisseaux partant du cœur.')"
         />
-        <circle cx="90" cy="112" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="90" cy="112" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Valvule Sigmoïde', 'Une valve sigmoïde est une valve artérielle assurant la liaison entre un ventricule et les vaisseaux partant du cœur.')"
         />
         <path d="M24.868 99.1632H38.794C38.1149 102.599 36.9053 104.228 33.9185 106.822H22.7791C20.8344 103.18 21.4095 101.531 24.868 99.1632Z" fill="#716173"/>
@@ -111,7 +111,7 @@
         stroke-width="1.3926"
         @click="showInfo('heart','Veines Pulmonaires droite', 'Les quatre veines pulmonaires (une pour chaque lobe pulmonaire) sont des veines chargées de véhiculer le sang oxygéné jusqu\'aux poumons et jusqu\'au cœur, chargé de le propulser dans le reste de l\'organisme')"
         />
-        <circle cx="25" cy="106" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="25" cy="106" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Veines Pulmonaires droite', 'Les quatre veines pulmonaires (une pour chaque lobe pulmonaire) sont des veines chargées de véhiculer le sang oxygéné jusqu\'aux poumons et jusqu\'au cœur, chargé de le propulser dans le reste de l\'organisme')"
         />
         <path
@@ -127,7 +127,7 @@
         stroke-width="1.3926"
         @click="showInfo('heart','Artère pulmonaire', 'L\'artère pulmonaire droite est un vaisseau sanguin essentiel dans le corps humain, responsable de transporter le sang oxygéné du ventricule droit du cœur vers les poumons pour y subir un processus de réoxygénation.')"
         />
-        <circle cx="107" cy="70" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="107" cy="70" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Artère pulmonaire', 'L\'artère pulmonaire droite est un vaisseau sanguin essentiel dans le corps humain, responsable de transporter le sang oxygéné du ventricule droit du cœur vers les poumons pour y subir un processus de réoxygénation.')"
         />
         <path d="M162.733 88.7187C159.201 90.0806 156.97 90.0985 152.985 90.1113C153.449 92.4323 154.377 97.2135 154.377 97.7706C157.368 95.4525 159.674 94.516 164.822 93.5928L162.733 88.7187Z" fill="#716173"/>
@@ -138,7 +138,7 @@
         stroke-width="1.3926"
         @click="showInfo('heart','Veines Pulmonaires gauche', 'Les quatre veines pulmonaires (une pour chaque lobe pulmonaire) sont des veines chargées de véhiculer le sang oxygéné jusqu\'aux poumons et jusqu\'au cœur, chargé de le propulser dans le reste de l\'organisme')"
         />
-        <circle cx="160" cy="96" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="160" cy="96" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Veines Pulmonaires gauche', 'Les quatre veines pulmonaires (une pour chaque lobe pulmonaire) sont des veines chargées de véhiculer le sang oxygéné jusqu\'aux poumons et jusqu\'au cœur, chargé de le propulser dans le reste de l\'organisme')"
         />
         <path
@@ -152,7 +152,7 @@
         fill="#D3574E"
         stroke="black"
         />
-        <circle cx="110" cy="230" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="110" cy="230" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Aorte', 'L\'aorte est la plus grande et la principale artère du corps humain, partant du cœur, plus précisément du ventricule gauche. Elle a pour fonction de distribuer le sang oxygéné à l\'ensemble de l\'organisme, sauf à la circulation fonctionnelle des poumons. L\'aorte se divise en plusieurs parties, notamment l\'aorte thoracique et l\'aorte abdominale, et elle est essentielle pour le transport du sang vers les organes et les membres')"
         />
         <path 
@@ -161,7 +161,7 @@
         stroke-width="1.3926"
         @click="showInfo('heart','Aorte', 'L\'aorte est la plus grande et la principale artère du corps humain, partant du cœur, plus précisément du ventricule gauche. Elle a pour fonction de distribuer le sang oxygéné à l\'ensemble de l\'organisme, sauf à la circulation fonctionnelle des poumons. L\'aorte se divise en plusieurs parties, notamment l\'aorte thoracique et l\'aorte abdominale, et elle est essentielle pour le transport du sang vers les organes et les membres')"
         />
-        <circle cx="80" cy="70" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="80" cy="70" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Aorte', 'L\'aorte est la plus grande et la principale artère du corps humain, partant du cœur, plus précisément du ventricule gauche. Elle a pour fonction de distribuer le sang oxygéné à l\'ensemble de l\'organisme, sauf à la circulation fonctionnelle des poumons. L\'aorte se divise en plusieurs parties, notamment l\'aorte thoracique et l\'aorte abdominale, et elle est essentielle pour le transport du sang vers les organes et les membres')"
         />
         <path
@@ -177,7 +177,7 @@
         stroke-width="1.3926"
         @click="showInfo('heart','Veine Cave Supérieure', 'La veine cave supérieure est une veine large et courte qui transporte la majeure partie du sang désoxygéné de la partie du corps située au-dessus du diaphragme vers l\'atrium droit (anciennement oreillette droite) du cœur.')"
         />
-        <circle cx="53" cy="75" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="53" cy="75" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Veine Cave Supérieure', 'La veine cave supérieure est une veine large et courte qui transporte la majeure partie du sang désoxygéné de la partie du corps située au-dessus du diaphragme vers l\'atrium droit (anciennement oreillette droite) du cœur.')"
         />
         <path
@@ -193,14 +193,14 @@
         stroke-width="1.3926"
         @click="showInfo('heart','Veine Cave Inférieure', 'La veine cave inférieure est une veine large située principalement dans l\'abdomen, issue de la réunion des deux veines iliaques communes et qui s\'ouvre dans l\'atrium droit (anciennement oreillette droite) du cœur.')"
         />
-        <circle cx="65" cy="220" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="65" cy="220" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Veine Cave Inférieure', 'La veine cave inférieure est une veine large située principalement dans l\'abdomen, issue de la réunion des deux veines iliaques communes et qui s\'ouvre dans l\'atrium droit (anciennement oreillette droite) du cœur.')"
         />
         <path d="M47.1502 45.5481C41.7672 47.1079 39.3116 47.9972 40.1872 49.7259C41.4522 50.5336 43.3548 50.9904 48.5428 51.8148H54.1132C54.1132 51.8148 58.2902 51.1185 58.9873 49.0296C59.6844 46.9407 58.4922 46.1211 54.8095 45.5481C51.9181 45.197 50.2051 45.3226 47.1502 45.5481Z"
         fill="url(#paint8_linear_51_3)"
         stroke="black"
         stroke-width="1.3926"/>
-        <circle cx="132" cy="130" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="132" cy="130" r="5" fill="yellow" stroke="black" stroke-width="1"
         @click="showInfo('heart','Valve Mitrale','La valve mitrale est une des quatre valves du cœur qui permettent au sang de circuler dans la bonne direction. Elle est située entre l\'oreillette gauche et le ventricule gauche du cœur. La valve mitrale est également appelée valve atrio-ventriculaire gauche. Elle est constituée de deux cusps ou volets qui s\'ouvrent et se ferment une fois à chaque battement de cœur. Si la valve ne s\'ouvre ou ne se ferme pas correctement, la circulation sanguine peut être réduite')"
         />
         <defs>
@@ -249,10 +249,10 @@
     <transition name="fade">
       <div class="info-container">
         <div class="title-container">
-          <h3 v-if="selectedHeartPart">{{ selectedHeartPart.name }}</h3>
+          <h3 v-if="selectedHeartPart" :class="{ 'active': selectedHeartPart }">{{ selectedHeartPart.name }}</h3>
         </div>
         <div class="text-container">
-          <p v-if="selectedHeartPart">
+          <p v-if="selectedHeartPart" :class="{ 'active': selectedHeartPart }">
             {{ selectedHeartPart.description }}
           </p>
         </div>
@@ -292,13 +292,45 @@
         <path d="M82.6209 92.0046H79.5508C77.7083 92.0046 78.9589 100.845 77.7093 99.9867C74.6298 95.9588 73.7095 95.4935 72.7968 96.3027C61.7098 105.065 60.5163 121.477 61.1307 125.161C61.7451 128.845 63.9002 131.855 66.0427 131.301C70.5605 130.243 72.5615 128.917 75.2528 125.161C79.4337 118.299 78.9554 114.11 78.9368 106.741C80.6926 103.453 81.7402 102.888 83.8489 106.741C84.6521 118.103 85.234 123.05 86.9189 125.161C89.601 129.239 96.129 131.915 97.971 131.301C99.813 130.687 102.165 120.812 101.655 117.793C94.7622 98.6621 92.1379 94.8622 89.3749 96.3027C88.2855 97.1297 87.7148 97.6379 86.9189 98.7587C85.6268 100.637 84.9257 101.11 83.8489 98.7586C83.8492 94.7835 84.0952 91.8684 82.6209 92.0046Z" fill="#82BEF3" stroke="#000B20" stroke-width="1.22801"/>
         <path d="M81.869 98H83.6233L93.272 102.386H106.137C107.319 102.44 107.917 102.548 107.891 104.14V110.572H109.353L106.722 115.251L107.891 114.373V119.929C107.87 120.473 107.665 120.786 106.137 121.391L88.8862 129.577L87.4243 128.408L105.552 119.636V114.373L106.722 115.251L104.675 110.572H105.844V104.14H93.272L83.6233 108.818H81.869V108.233L83.0386 107.941V107.356H81.5767V106.479H83.9157L85.3776 106.771L89.7634 104.432H86.5472L83.331 105.894H81.5767V105.017H83.331L83.9157 104.432H81.5767V103.555H85.9624L84.7929 102.971H81.5767V102.093H83.0386L81.5767 101.216V100.339L84.5005 100.924L87.1319 102.093H89.471L86.2548 100.339L81.5767 99.4619L83.0386 99.1695L81.869 98.8771V98Z" fill="#EF2124"/>
         <path d="M80.9923 98H79.238L69.5893 102.386H56.7245C55.542 102.44 54.9446 102.548 54.9702 104.14L55.1164 112.765L54.0931 114.958H54.9702V119.929C54.9911 120.473 55.1967 120.786 56.7245 121.391L73.9751 129.577L75.437 128.408L57.3093 119.636V114.958H58.4788L57.3093 112.765L57.0169 104.14H69.5893L79.238 108.818H80.9923V108.233L79.8228 107.941V107.356H81.2847V106.479H78.9456L77.4837 106.771L73.0979 104.432H76.3142L79.5304 105.894H81.2847V105.017H79.5304L78.9456 104.432H81.2847V103.555H76.8989L78.0685 102.971H81.2847V102.093H79.8228L81.2847 101.216V100.339L78.3608 100.924L75.7294 102.093H73.3903L76.6065 100.339L81.2847 99.4619L79.8228 99.1695L80.9923 98.8771V98Z" fill="#0B0C82"/>
-        <circle cx="75" cy="165" r="5" fill="red" stroke="black" stroke-width="1"
+        <circle cx="75" cy="165" r="5" fill="yellow" stroke="black" stroke-width="1"
           @click="showInfo('body','Foie', 'Décompose l\'alcool, les drogues et les autres toxines présentes dans le sang afin que ces substances puissent être évacuées du corps par les selles ou l\'urine')"
-        />
-        <circle cx="61" cy="169" r="4" fill="red" stroke="black" stroke-width="1"
+        /><!-- FOIE -->
+        <circle cx="61" cy="169" r="4" fill="yellow" stroke="black" stroke-width="1"
           @click="showInfo('body','Vésicule Biliaire', 'La vésicule biliaire est une petite poche située sous le foie. Son rôle consiste à stocker la bile avant qu\'elle se déverse dans l\'intestin, ce qui arrive en particulier au moment de la digestion. Sécrétée par le foie, la bile est un liquide qui facilite la digestion des graisses.')"
-        />
-
+        /><!-- VESICULE BILIAIRE -->
+        <circle cx="95" cy="165" r="4" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Estomac', 'Organe long et tubulaire dans l\'abdomen qui reçoit la nourriture partiellement digérée de l\'estomac, absorbe les éléments nutritifs et rejette les aliments digérés dans le gros intestin.')"
+        /><!-- ESTOMAC -->
+        <circle cx="79" cy="179" r="4" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Pancreas', 'Pendant la digestion, le pancréas fabrique des sucs pancréatiques appelés enzymes. Ces enzymes décomposent les sucres, les graisses et les amidons. Le pancréas aide également le système digestif en produisant des hormones. Ce sont des messagers chimiques qui circulent dans le sang.')"
+        /><!-- PANCREAS -->
+        <circle cx="50" cy="210" r="4" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Gros intestin', 'La grande majorité des substances digestibles ont été absorbées dans l\'intestin grêle, seules l\'eau et les matières indigestes se retrouvent à l\'entrée du gros intestin. Son premier travail est de récupérer l\'eau qui reste dans ces matières indigestes, puis de compacter celles-ci sous la forme de selles.')"
+        /><!-- GROS INSTESTIN -->
+        <circle cx="71" cy="212" r="4" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Intestin grêle', 'Ces régions de l\'intestin grêle participent largement à l\'absorption des graisses et autres nutriments. Les mouvements digestifs facilitent l\'absorption, elle-même renforcée par la grande surface de contact formée par les replis, villosités et microvillosités.')"
+        /><!-- INSTESTIN GRELE -->
+        <circle cx="80" cy="250" r="3" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Rectum', 'Le rectum est un lieu de rétention des selles . Lorsqu\'il est plein, il expulse les selles hors du corps par l\'anus.')"
+        /><!-- RECTUM -->
+        <circle cx="57" cy="228" r="3" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Appendice', 'Le rôle de l\'appendice n\'est pas totalement élucidé, mais il pourrait intervenir dans le système immunitaire. L\'appendice abriterait une flore bactérienne bénéfique qui serait tenue en réserve pour répondre à une indigestion grave. Elle peut parfois mener à une inflammation (appendicite) nécessitant son ablation (appendicectomie)')"
+        /><!-- APPENDICE -->
+        <circle cx="71" cy="115" r="3" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Poumons', 'Les principales fonctions des poumons sont de transférer dans le sang l\'oxygène présent dans l\'air et d\'évacuer dans l\'air le dioxyde de carbone présent dans le sang. L\'air entre par la bouche ou le nez et descend dans la trachée, les bronches et les bronchioles jusqu\'aux alvéoles.')"
+        /><!-- POUMONS -->
+        <circle cx="81" cy="70" r="3" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Œsophage', 'L\'œsophage est le premier segment du tube digestif qui a pour fonction le transport des aliments mâchés. Ce tube musculeux s\'étend du larynx jusqu\'à l\'estomac, où la nourriture est digérée. La digestion commence de manière mécanique, par la contracture des muscles de l\'estomac.')"
+        /><!-- OEUSOPHAGE -->
+        <circle cx="83" cy="81" r="2" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Clapet', 'Le sphincter inférieur de l\'œsophage est un muscle situé entre l\'œsophage et l\'estomac. Il permet d\'ouvrir et de fermer l\'entrée dans l\'estomac. Chez de nombreuses personnes il peut disfonctionner, menant à des remontées acides et une sensation d\'inconfort plus ou moins intense.')"
+        /><!-- CLAPET -->
+        <circle cx="96" cy="65" r="3" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Langue', 'La langue, organe important de la cavité buccale, sert tant à la déglutition, qu\'à la mastication, à la gustation et au langage.')"
+        /><!-- LANGUE -->
+        <circle cx="72" cy="55" r="2" fill="yellow" stroke="black" stroke-width="1"
+          @click="showInfo('body','Glandes salivaires', 'Les glandes salivaires jouent un rôle important dans la digestion puisqu\'elles produisent de la salive. La salive aide à humidifier la nourriture afin qu\'on puisse l\'avaler plus facilement. Elle contient aussi une enzyme appelée amylase qui aide l\'estomac à décomposer plus facilement l\'amidon provenant des aliments.')"
+        /><!-- GLANDES SALIVAIRES -->
         
         <defs>
           <linearGradient id="paint0_linear_62_13" x1="80.9531" y1="125.866" x2="80.9531" y2="147.161" gradientUnits="userSpaceOnUse">
@@ -311,10 +343,10 @@
     <transition name="fade">
       <div class="info-container">
         <div class="title-container">
-          <h3 v-if="selectedBodyPart">{{ selectedBodyPart.name }}</h3>
+          <h3 v-if="selectedBodyPart" :class="{ 'active': selectedBodyPart }">{{ selectedBodyPart.name }}</h3>
         </div>
         <div class="text-container">
-          <p v-if="selectedBodyPart">
+          <p v-if="selectedBodyPart" :class="{ 'active': selectedBodyPart }">
             {{ selectedBodyPart.description }}
           </p>
         </div>
@@ -328,7 +360,7 @@
   data() {
     return {
       selectedHeartPart: null,  // Stores selected part info for heart
-      selectedBodyPart: null    // Stores selected part info for body
+      selectedBodyPart: null,    // Stores selected part info for body
     };
   },
   methods: {
@@ -346,7 +378,13 @@
   </script>
   
   <style scoped>
-
+  @keyframes appear {
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
@@ -355,14 +393,20 @@
   transform: translateY(10px);
 }
 
+.active {
+  opacity: 1;
+  animation: appear .2s ease-in-out forwards;
+}
+
 .body-container {
-    width: 300px;
-    height: 900px;
+    max-width: 300px;
+    max-height: 900px;
     margin: 0 auto;
 
-    img {
+    svg {
       width: 100%;
       height: 100%;
+      
     }
   }
 
@@ -370,6 +414,12 @@ circle {
   cursor: pointer;
   position: relative;
   z-index: 5;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    r: 7px;
+    fill: rgb(255, 0, 0);
+  }
 }
 
 .wrapper {
@@ -396,12 +446,39 @@ circle {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 325px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    opacity: 1;
+    position: relative;
+    overflow-x: hidden;
+
+    .title-container {
+      position: relative;
+      line-height: 1.5rem;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+
+      h3 {
+        animation: appear .2s ease-in-out forwards;
+      }
+    }
 
     .text-container {
-      line-height: 1.5rem;
+      position: relative;
+      line-height: 1.3rem;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+
+      p {
+        left: 50%;
+        position: absolute;
+        animation: appear .2s ease-in-out forwards;
+        height: 100%;
+      }
     }
   }
 }

@@ -19,6 +19,32 @@ import HeaderDisplay from './components/HeaderDisplay.vue';
 </template>
 
 <style lang="scss">
+
+// CUSTOM SCROLLBAR
+/* Apply styles to the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey background */
+  border-radius: 10px;
+}
+
+/* Handle (scrollbar itself) */
+::-webkit-scrollbar-thumb {
+  background: #002157; /* Red color */
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d62828; /* Darker red on hover */
+}
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

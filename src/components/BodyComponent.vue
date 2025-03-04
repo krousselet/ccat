@@ -1,8 +1,5 @@
 <template>
   <main>
-  <div class="title-container">
-    <h2>Coeur</h2>
-  </div>
   <div class="wrapper">
     <div class="heart-container part-container">
       <svg xmlns="http://www.w3.org/2000/svg" width="187" height="269" viewBox="0 0 187 269" fill="none">
@@ -65,13 +62,8 @@
           fill="url(#paint3_linear_51_3)" stroke="black" stroke-width="1.3926" />
         <path
           d="M67.3426 152.778H63.1648C62.5655 150.566 63.3113 150.048 65.95 149.993C67.2089 150.76 67.5216 151.358 67.3426 152.778Z"
-          fill="#656464" stroke="black" stroke-width="1.3926" @click="
-            showInfo(
-              'heart',
-              'Valve Tricuspide',
-              'La valve tricuspide (valve atrio-ventriculaire) correspond à la valve du cœur qui crée une séparation entre le ventricule droit et l\'oreillette droite. Elle a pour rôle d\'empêcher que le sang ne reflue entre l\'oreillette droite et le ventricule droit.'
-            )
-            " />
+          fill="#656464" stroke="black" stroke-width="1.3926"
+/>
         <circle cx="65" cy="150" r="5" fill="yellow" stroke="black" stroke-width="1" @click="
           showInfo(
             'heart',
@@ -86,13 +78,7 @@
         cœur.')"
         <path
           d="M39.4903 134.674C41.7349 143.156 40.4354 141.177 45.757 143.726C51.2808 131.906 58.1161 129.658 75.0005 131.193C76.9816 126.783 76.4481 121.2 75.0005 110.304C70.5258 97.6613 67.1499 93.9874 59.6828 92.8965C41.099 93.4479 37.2457 126.193 39.4903 134.674Z"
-          fill="url(#paint4_linear_51_3)" stroke="black" stroke-width="1.3926" @click="
-            showInfo(
-              'heart',
-              'Oreillette Droite',
-              'Le rôle de l\'oreillette droite du cœur est de recevoir le sang veineux désoxygéné. Elle reçoit le sang provenant des veines caves supérieure et inférieure et l\'envoie au ventricule droit. La valvule tricuspide sépare l\'oreillette droite du ventricule droit et s\'ouvre pour permettre au sang de pénétrer dans le ventricule droit'
-            )
-            " />
+          fill="url(#paint4_linear_51_3)" stroke="black" stroke-width="1.3926" />
         <circle cx="60" cy="115" r="5" fill="yellow" stroke="black" stroke-width="1" @click="
           showInfo(
             'heart',
@@ -102,19 +88,13 @@
           " />
         <path
           d="M146.023 107.519C135.532 105.92 129.841 105.759 120.26 107.519L110.512 96.378C108.936 91.0335 111.465 88.373 118.171 83.8446C122.136 81.0778 127.052 80.6488 136.971 80.3631C145.978 90.9879 150.413 96.9424 146.023 107.519Z"
-          fill="url(#paint5_linear_51_3)" stroke="black" stroke-width="1.3926" @click="
-            showInfo(
-              'heart',
-              'Oreillette Gauche',
-              'L\'oreillette gauche joue un rôle important dans le remplissage ventriculaire gauche. Elle agit comme une “pompe contractile” qui fournit 15 à 30% du remplissage total du ventricule gauche, un “réservoir” qui collecte le retour veineux pulmonaire pendant la systole ventriculaire et un “conduit” permettant le passage du sang de l\’oreillette au ventricule gauche pendant la diastole ventriculaire précoce. Le sang oxygéné qui provient des poumons est conduit dans l\'oreillette gauche par les quatre veines pulmonaires'
-            )
-            " />
+          fill="url(#paint5_linear_51_3)" stroke="black" stroke-width="1.3926"/>
         <circle cx="130" cy="95" r="5" fill="yellow" stroke="black" stroke-width="1" @click="
           showInfo(
             'heart',
             'Oreillette Gauche',
-            'L\'oreillette gauche joue un rôle important dans le remplissage ventriculaire gauche. Elle agit comme une “pompe contractile” qui fournit 15 à 30% du remplissage total du ventricule gauche, un “réservoir” qui collecte le retour veineux pulmonaire pendant la systole ventriculaire et un “conduit” permettant le passage du sang de l\’oreillette au ventricule gauche pendant la diastole ventriculaire précoce. Le sang oxygéné qui provient des poumons est conduit dans l\'oreillette gauche par les quatre veines pulmonaires'
-          )
+            'L\'oreillette gauche joue un rôle important dans le remplissage ventriculaire gauche. Elle agit comme une “pompe contractile”. Le sang oxygéné qui provient des poumons est conduit dans l\'oreillette gauche par les quatre veines pulmonaires'
+            )
           " />
         <path
           d="M77.7853 119.356C75.9952 114.685 75.9528 111.788 77.7853 106.126C88.2258 104.419 92.7637 105.203 97.978 110.304L99.3706 117.963C99.3874 120.475 100.113 122.043 92.4076 122.837C89.0401 122.396 88.3271 120.977 87.5335 117.963C84.9015 119.564 82.6303 119.741 77.7853 119.356Z"
@@ -294,7 +274,7 @@
           showInfo(
             'heart',
             'Valve Mitrale',
-            'La valve mitrale est une des quatre valves du cœur qui permettent au sang de circuler dans la bonne direction. Elle est située entre l\'oreillette gauche et le ventricule gauche du cœur. La valve mitrale est également appelée valve atrio-ventriculaire gauche. Elle est constituée de deux cusps ou volets qui s\'ouvrent et se ferment une fois à chaque battement de cœur. Si la valve ne s\'ouvre ou ne se ferme pas correctement, la circulation sanguine peut être réduite'
+            'La valve mitrale est une des quatre valves du cœur qui permettent au sang de circuler dans la bonne direction.. Elle est constituée de deux cusps ou volets qui s\'ouvrent et se ferment une fois à chaque battement de cœur. Si la valve ne s\'ouvre ou ne se ferme pas correctement, la circulation sanguine peut être réduite'
           )
           " />
         <defs>
@@ -363,9 +343,6 @@
         </div>
       </div>
     </transition>
-  </div>
-  <div class="title-container">
-    <h2>Corps</h2>
   </div>
   <div class="wrapper">
     <div class="body-container part-container">
@@ -760,9 +737,6 @@
         </div>
       </div>
     </transition>
-  </div>
-  <div class="title-container">
-    <h2>Os</h2>
   </div>
   <div class="wrapper">
     <div class="bones-container part-container">
@@ -1924,19 +1898,22 @@ export default {
   }
 }
 
+@keyframes left {
+  100% {
+    left: 50%;
+  }
+}
+
 .fade-enter-active,
 .fade-leave-active {
-  transition: 0.3s ease-in-out;
+  transition: .1s .1s ease-in-out;
   overflow: hidden;
 }
 
 .fade-enter-from,
 .fade-leave-to {
-  opacity: 0;
-  transform: translateX(50px);
-  max-height: 0;
+  animation:  left .1s .1s ease-in-out;
   overflow: hidden;
-  transition: 0.3s ease-in-out;
 }
 
 .active {
@@ -2000,6 +1977,7 @@ circle {
       height: 25%;
       overflow: hidden;
       margin: 0 auto;
+      transition: .1s .1s ease-in-out;
 
       h3 {
         animation: appear 0.2s ease-in-out forwards;
@@ -2017,8 +1995,9 @@ circle {
       line-height: 1.5rem;
       width: 100%;
       height: 100%;
-      overflow-x: hidden;
+      overflow: hidden;
       margin: 0 auto;
+      transition: .1s .1s ease-in-out;
 
       p {
         left: 50%;

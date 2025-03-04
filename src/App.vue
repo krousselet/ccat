@@ -7,7 +7,7 @@ import HeaderDisplay from './components/HeaderDisplay.vue';
   <HeaderDisplay>
   </HeaderDisplay>
     <nav>
-    <router-link to="/">Home</router-link>
+      <router-link to="/">Home</router-link>
       <router-link to="/about">Details</router-link>
       <router-link to="/convert">Convertir</router-link>
       <router-link to="/technicalterms">Glossaire</router-link>

@@ -1,4 +1,5 @@
 <template>
+  <main>
   <div class="title-container">
     <h2>Coeur</h2>
   </div>
@@ -1883,6 +1884,7 @@
       </div>
     </transition>
   </div>
+  </main>
 </template>
 
 <script>
@@ -1941,11 +1943,6 @@ export default {
   transform: scale(1.2);
 }
 
-.active {
-  opacity: 1;
-  animation: appear 0.2s ease-in-out forwards;
-}
-
 .body-container {
   max-width: 300px;
   max-height: 900px;
@@ -1999,7 +1996,7 @@ circle {
       position: relative;
       line-height: 1.5rem;
       width: 100%;
-      height: 25%;
+      height: 10%;
       overflow-x: hidden;
       margin: 0 auto;
 
@@ -2007,7 +2004,6 @@ circle {
         animation: appear 0.2s ease-in-out forwards;
         left: 50%;
         position: relative;
-        animation: appear 0.2s ease-in-out forwards;
         height: 100%;
       }
     }

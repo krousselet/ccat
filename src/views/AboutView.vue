@@ -89,12 +89,13 @@
     grid-template-rows: 1fr; 
 
     .title-container {
-      font-size: 30vw;
+      font-size: 3vw;
     }
 
-    .text-zero {
+    .text {
       margin-top: 50px;
-      line-height: 10px;
+      line-height: 50px;
+      font-size: 1.5vw;
     }
   }
 

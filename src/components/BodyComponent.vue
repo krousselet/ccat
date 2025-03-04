@@ -1939,8 +1939,9 @@ export default {
   transition: 0.3s ease-in-out;
 }
 
-.bones-container {
-  transform: scale(1.2);
+.active {
+  opacity: 1;
+  animation: appear 0.2s ease-in-out forwards;
 }
 
 .body-container {
@@ -1967,7 +1968,7 @@ circle {
 }
 
 .wrapper {
-  height: auto;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -1975,8 +1976,8 @@ circle {
 
   .part-container {
     width: 100%;
-    height: auto;
-    margin: 0 auto;
+    height: 100%;
+    margin: 50px auto;
   }
 
   .info-container {
@@ -1996,15 +1997,18 @@ circle {
       position: relative;
       line-height: 1.5rem;
       width: 100%;
-      height: 10%;
-      overflow-x: hidden;
+      height: 25%;
+      overflow: hidden;
       margin: 0 auto;
 
       h3 {
         animation: appear 0.2s ease-in-out forwards;
         left: 50%;
         position: relative;
+        animation: appear 0.2s ease-in-out forwards;
         height: 100%;
+        font-size: 1.6vw;
+        margin-top: 9px;
       }
     }
 
@@ -2021,6 +2025,8 @@ circle {
         position: relative;
         animation: appear 0.4s ease-in-out forwards;
         height: 100%;
+        font-size: 1.5vw;
+        line-height: 50px;
       }
     }
   }
@@ -2054,16 +2060,23 @@ circle {
         width: 100%;
         height: 25%;
         margin: 0 auto;
+        overflow: hidden;
+
+        h3 {
+          font-size: 4vw;
+        }
       }
 
       .text-container {
         width: 100%;
         height: 100%;
         margin: 0 auto;
+        overflow-x: hidden;
 
         p {
-          width: 75%;
+          width: 100%;
           margin: 0 auto;
+          font-size: 3vw;
         }
       }
     }

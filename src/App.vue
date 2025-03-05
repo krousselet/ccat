@@ -14,6 +14,7 @@ import HeaderDisplay from './components/HeaderDisplay.vue';
       <router-link to="/aircraft">Avion</router-link>
       <router-link to="/altitude">Altitude</router-link>
       <router-link to="/body">Corps</router-link>
+      <router-link to="/hurt">Maladies</router-link>
     </nav>
   <router-view />
 </template>
